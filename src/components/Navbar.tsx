@@ -1,4 +1,4 @@
-const links = ["Skills", "Projects", "Contact"];
+const links = ["Skills", "Projects", "Experience", "Certifications", "Contact"];
 
 const Navbar = () => {
   const scrollTo = (id: string) => {

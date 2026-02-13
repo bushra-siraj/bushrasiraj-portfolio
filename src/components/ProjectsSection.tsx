@@ -4,29 +4,45 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     title: "House Price Predictor",
-    description: "A regression model that predicts house prices based on key features, deployed with an interactive Streamlit interface.",
-    tags: ["Python", "Regression", "Streamlit"],
+    description: [
+      "Developed a regression model using Scikit-learn to predict house prices based on key features.",
+      "Engineered features to improve prediction accuracy across diverse datasets.",
+      "Deployed with an interactive Streamlit interface for real-time predictions.",
+    ],
+    tags: ["Python", "Scikit-learn", "Regression", "Streamlit"],
     demo: "#",
     github: "#",
   },
   {
     title: "Weather Dashboard",
-    description: "Real-time weather data visualization powered by API integration, presenting forecasts through clean interactive charts.",
-    tags: ["API", "Data Viz", "Python"],
+    description: [
+      "Built an interactive Streamlit dashboard that fetches real-time weather data.",
+      "Integrated a public weather API for live forecast information.",
+      "Presented data through clean, interactive charts and visualizations.",
+    ],
+    tags: ["Python", "API", "Streamlit", "Data Viz"],
     demo: "#",
     github: "#",
   },
   {
     title: "NFLX vs TSLA Stock Dashboard",
-    description: "Comparative stock analysis dashboard exploring trends and volatility between Netflix and Tesla equities.",
-    tags: ["Data Analysis", "Streamlit", "Pandas"],
+    description: [
+      "Built a Streamlit dashboard using Python and Pandas for stock analysis.",
+      "Visualized and compared historical stock trends between Netflix and Tesla.",
+      "Explored volatility patterns and key financial metrics.",
+    ],
+    tags: ["Python", "Pandas", "Streamlit", "Data Analysis"],
     demo: "#",
     github: "#",
   },
   {
     title: "BBC News Classifier",
-    description: "NLP-powered text classifier using TF-IDF vectorization to categorize BBC news articles by topic.",
-    tags: ["NLP", "TF-IDF", "ML"],
+    description: [
+      "Implemented a Scikit-learn model using TF-IDF vectorization for text classification.",
+      "Categorized BBC news articles into topics with high accuracy.",
+      "Features an interactive Streamlit front-end for live predictions.",
+    ],
+    tags: ["Python", "NLP", "TF-IDF", "Scikit-learn", "Streamlit"],
     demo: "#",
     github: "#",
   },
@@ -46,35 +62,50 @@ const ProjectsSection = () => (
         {projects.map((project) => (
           <div
             key={project.title}
-            className="rounded-xl border border-border bg-card p-6 flex flex-col card-hover"
+            className="rounded-xl border border-border bg-card overflow-hidden flex flex-col card-hover"
           >
-            <h3 className="text-xl font-semibold mb-2 text-card-foreground">{project.title}</h3>
-            <p className="text-sm text-muted-foreground mb-4 flex-1">{project.description}</p>
-
-            <div className="flex flex-wrap gap-2 mb-5">
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs font-mono px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20"
-                >
-                  {tag}
-                </span>
-              ))}
+            {/* Image placeholder */}
+            <div className="w-full h-48 bg-secondary flex items-center justify-center border-b border-border">
+              <span className="text-muted-foreground text-sm font-mono">Screenshot Coming Soon</span>
             </div>
 
-            <div className="flex gap-3">
-              <Button asChild size="sm" className="rounded-full gap-1.5">
-                <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="w-3.5 h-3.5" />
-                  Live Demo
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="sm" className="rounded-full gap-1.5">
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <Github className="w-3.5 h-3.5" />
-                  GitHub
-                </a>
-              </Button>
+            <div className="p-6 flex flex-col flex-1">
+              <h3 className="text-xl font-semibold mb-3 text-card-foreground">{project.title}</h3>
+
+              <ul className="text-sm text-muted-foreground mb-4 flex-1 space-y-1.5">
+                {project.description.map((point, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-primary mt-1 shrink-0">•</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-2 mb-5">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs font-mono px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-3">
+                <Button asChild size="sm" className="rounded-full gap-1.5">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    Live Demo
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="sm" className="rounded-full gap-1.5">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="w-3.5 h-3.5" />
+                    GitHub
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         ))}

@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
@@ -11,15 +11,27 @@ const ContactSection = () => (
         Open to collaborations, opportunities, and interesting data problems.
       </p>
 
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+        <a href="mailto:Bushrasiraj586@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Mail className="w-4 h-4 text-primary" />
+          Bushrasiraj586@gmail.com
+        </a>
+        <span className="hidden sm:inline text-border">|</span>
+        <a href="tel:+923152891585" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Phone className="w-4 h-4 text-primary" />
+          +923152891585
+        </a>
+      </div>
+
       <div className="flex justify-center gap-4">
         <Button asChild size="lg" variant="outline" className="rounded-full gap-2">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/bushra-siraj" target="_blank" rel="noopener noreferrer">
             <Github className="w-5 h-5" />
             GitHub
           </a>
         </Button>
         <Button asChild size="lg" variant="outline" className="rounded-full gap-2">
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/bushrasiraj" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-5 h-5" />
             LinkedIn
           </a>
