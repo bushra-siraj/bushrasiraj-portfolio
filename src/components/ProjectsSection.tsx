@@ -10,8 +10,8 @@ const projects = [
       "Deployed with an interactive Streamlit interface for real-time predictions.",
     ],
     tags: ["Python", "Scikit-learn", "Regression", "Streamlit"],
-    demo: "#",
-    github: "#",
+    demo: "https://prohouse-valuator.streamlit.app/",
+    github: "https://github.com/bushra-siraj/ProHouse-Valuator",
   },
   {
     title: "Weather Dashboard",
@@ -21,8 +21,8 @@ const projects = [
       "Presented data through clean, interactive charts and visualizations.",
     ],
     tags: ["Python", "API", "Streamlit", "Data Viz"],
-    demo: "#",
-    github: "#",
+    demo: "https://skywatch-ai-weather.streamlit.app/",
+    github: "https://github.com/bushra-siraj/SkyWatch-AI-Weather-App",
   },
   {
     title: "NFLX vs TSLA Stock Dashboard",
@@ -32,8 +32,8 @@ const projects = [
       "Explored volatility patterns and key financial metrics.",
     ],
     tags: ["Python", "Pandas", "Streamlit", "Data Analysis"],
-    demo: "#",
-    github: "#",
+    demo: "https://netflix-tesla-stock-dashboard.streamlit.app/",
+    github: "https://github.com/bushra-siraj/netflix-tesla-stock-dashboard",
   },
   {
     title: "BBC News Classifier",
@@ -43,11 +43,10 @@ const projects = [
       "Features an interactive Streamlit front-end for live predictions.",
     ],
     tags: ["Python", "NLP", "TF-IDF", "Scikit-learn", "Streamlit"],
-    demo: "#",
-    github: "#",
+    demo: "https://text-classifier-ai.streamlit.app/",
+    github: "https://github.com/bushra-siraj/News-Classifier-AI",
   },
 ];
-
 const ProjectsSection = () => (
   <section id="projects" className="py-24 px-6">
     <div className="max-w-5xl mx-auto">
@@ -64,11 +63,6 @@ const ProjectsSection = () => (
             key={project.title}
             className="rounded-xl border border-border bg-card overflow-hidden flex flex-col card-hover"
           >
-            {/* Image placeholder */}
-            <div className="w-full h-48 bg-secondary flex items-center justify-center border-b border-border">
-              <span className="text-muted-foreground text-sm font-mono">Screenshot Coming Soon</span>
-            </div>
-
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-xl font-semibold mb-3 text-card-foreground">{project.title}</h3>
 
