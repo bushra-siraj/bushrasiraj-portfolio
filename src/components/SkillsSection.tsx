@@ -1,4 +1,4 @@
-import { Brain, BarChart3, Code2, Layout, Database, FileSpreadsheet, Search, Tag, MessageSquare, Users, Lightbulb, Eye, Clock } from "lucide-react";
+import { Brain, BarChart3, Code2, Layout, Database, FileSpreadsheet, Search, Tag, MessageSquare, Users, Lightbulb, Eye, Clock, Settings } from "lucide-react";
 
 const technicalSkills = [
   { name: "Python", description: "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn", icon: Code2 },
@@ -21,7 +21,8 @@ const softSkills = [
 const SkillsSection = () => (
   <section id="skills" className="py-24 px-6">
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 flex items-center justify-center gap-3">
+        <Settings className="w-8 h-8 text-primary" />
         Skills & <span className="text-gradient">Expertise</span>
       </h2>
       <p className="text-muted-foreground text-center mb-14 max-w-lg mx-auto">

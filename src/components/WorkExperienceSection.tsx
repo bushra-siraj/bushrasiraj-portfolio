@@ -3,7 +3,8 @@ import { Briefcase } from "lucide-react";
 const WorkExperienceSection = () => (
   <section id="experience" className="py-24 px-6">
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 flex items-center justify-center gap-3">
+        <Briefcase className="w-8 h-8 text-primary" />
         Work <span className="text-gradient">Experience</span>
       </h2>
       <p className="text-muted-foreground text-center mb-14 max-w-lg mx-auto">

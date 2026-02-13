@@ -1,10 +1,11 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
   <section id="contact" className="py-24 px-6 border-t border-border">
     <div className="max-w-2xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-3">
+        <MessageCircle className="w-8 h-8 text-primary" />
         Let's <span className="text-gradient">Connect</span>
       </h2>
       <p className="text-muted-foreground mb-8">
