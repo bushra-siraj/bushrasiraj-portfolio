@@ -1,9 +1,10 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Rocket, Home, Cloud, TrendingUp, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
     title: "House Price Predictor",
+    icon: Home,
     description: [
       "Developed a regression model using Scikit-learn to predict house prices based on key features.",
       "Engineered features to improve prediction accuracy across diverse datasets.",
@@ -15,6 +16,7 @@ const projects = [
   },
   {
     title: "Weather Dashboard",
+    icon: Cloud,
     description: [
       "Built an interactive Streamlit dashboard that fetches real-time weather data.",
       "Integrated a public weather API for live forecast information.",
@@ -26,6 +28,7 @@ const projects = [
   },
   {
     title: "NFLX vs TSLA Stock Dashboard",
+    icon: TrendingUp,
     description: [
       "Built a Streamlit dashboard using Python and Pandas for stock analysis.",
       "Visualized and compared historical stock trends between Netflix and Tesla.",
@@ -37,6 +40,7 @@ const projects = [
   },
   {
     title: "BBC News Classifier",
+    icon: FileText,
     description: [
       "Implemented a Scikit-learn model using TF-IDF vectorization for text classification.",
       "Categorized BBC news articles into topics with high accuracy.",
@@ -50,7 +54,8 @@ const projects = [
 const ProjectsSection = () => (
   <section id="projects" className="py-24 px-6">
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 flex items-center justify-center gap-3">
+        <Rocket className="w-8 h-8 text-primary" />
         Featured <span className="text-gradient">Projects</span>
       </h2>
       <p className="text-muted-foreground text-center mb-14 max-w-lg mx-auto">
@@ -64,7 +69,12 @@ const ProjectsSection = () => (
             className="rounded-xl border border-border bg-card overflow-hidden flex flex-col card-hover"
           >
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="text-xl font-semibold mb-3 text-card-foreground">{project.title}</h3>
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <project.icon className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-card-foreground">{project.title}</h3>
+              </div>
 
               <ul className="text-sm text-muted-foreground mb-4 flex-1 space-y-1.5">
                 {project.description.map((point, i) => (
