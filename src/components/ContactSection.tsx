@@ -31,7 +31,7 @@ const ContactSection = () => (
           </a>
         </Button>
         <Button asChild size="lg" variant="outline" className="rounded-full gap-2">
-          <a href="https://linkedin.com/in/bushrasiraj" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/bushrasiraj" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-5 h-5" />
             LinkedIn
           </a>
