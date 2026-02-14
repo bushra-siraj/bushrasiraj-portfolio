@@ -8,7 +8,7 @@ const AboutSection = () => (
         About <span className="text-gradient">Me</span>
       </h2>
       <p className="text-muted-foreground text-lg leading-relaxed">
-        A dedicated Data Science student with practical experience in building predictive models, data visualization, and data annotation. Passionate about solving complex problems using data and creating intuitive, interactive user interfaces to showcase data insights.
+        Data Science enthusiast specializing in building deployable machine learning models and interactive data applications. Experienced in predictive modeling, data visualization, and computer vision annotation using professional tools like Roboflow. Proven ability to work with real-world datasets, having annotated 5,000+ images using bounding boxes and polygon annotations for computer vision training. Passionate about transforming raw data into actionable insights and developing practical AI solutions. Currently seeking paid internships and freelance opportunities in Machine Learning, Data Analysis, and AI development.
       </p>
     </div>
   </section>

@@ -23,11 +23,19 @@ const WorkExperienceSection = () => (
               <ul className="text-sm text-muted-foreground space-y-2">
                 <li className="flex gap-2">
                   <span className="text-primary mt-1 shrink-0">•</span>
-                  <span>Annotated over 5,000+ images in two weeks, maintaining a 99% accuracy rate for computer vision model training sets.</span>
+                  <span>Annotated 5,000+ logo images (Zoom, Levi's, and others) using bounding box and polygon annotations on Roboflow.</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1 shrink-0">•</span>
-                  <span>Utilized data labeling tools to prepare high-quality datasets, ensuring robust model performance.</span>
+                  <span>Prepared high-quality datasets for computer vision model training and validation.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary mt-1 shrink-0">•</span>
+                  <span>Maintained 99% annotation accuracy while meeting strict project deadlines.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary mt-1 shrink-0">•</span>
+                  <span>Contributed to improving object detection model performance through precise labeling.</span>
                 </li>
               </ul>
             </div>
