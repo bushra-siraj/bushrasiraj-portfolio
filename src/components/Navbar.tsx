@@ -1,8 +1,16 @@
-const links = ["Skills", "Projects", "Experience", "Certifications", "Contact"];
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+
+const links = ["About", "Skills", "Projects", "Experience", "Certifications", "Contact"];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   const scrollTo = (id: string) => {
     document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
   };
 
   return (
@@ -12,7 +20,8 @@ const Navbar = () => {
           B<span className="text-primary">.</span>S
         </button>
 
-        <ul className="flex gap-6">
+        {/* Desktop nav */}
+        <ul className="hidden md:flex gap-6">
           {links.map((link) => (
             <li key={link}>
               <button
@@ -24,6 +33,29 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* Mobile panel */}
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild className="md:hidden">
+            <Button variant="ghost" size="icon">
+              <Menu className="w-5 h-5" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-64">
+            <SheetTitle className="sr-only">Navigation</SheetTitle>
+            <div className="flex flex-col gap-2 mt-8">
+              {links.map((link) => (
+                <button
+                  key={link}
+                  onClick={() => scrollTo(link)}
+                  className="text-left px-4 py-3 rounded-lg text-foreground hover:bg-primary/10 hover:text-primary transition-colors font-medium"
+                >
+                  {link}
+                </button>
+              ))}
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
     </nav>
   );
