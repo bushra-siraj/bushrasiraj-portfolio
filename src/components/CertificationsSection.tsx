@@ -5,8 +5,11 @@ const certifications = [
   { title: "Data Science & AI Course", issuer: "SMIT", note: "In Progress" },
   { title: "Computer Vision and Image Processing", issuer: "OpenCV" },
   { title: "Python Fundamentals", issuer: "Cisco Networking Academy" },
-  { title: "Introduction to Excel", issuer: "Simplilearn" },
   { title: "Certificate of Participation — Hackathon", issuer: "SMIT" },
+  { title: "Understanding Data Engineering", issuer: "DataCamp" },
+  { title: "Intermediate Python For Developers", issuer: "DataCamp" },
+  { title: "Advance Excel Functions", issuer: "DataCamp" },
+  { title: "Data Validation in Excel", issuer: "DataCamp" },
 ];
 
 const CertificationsSection = () => (
