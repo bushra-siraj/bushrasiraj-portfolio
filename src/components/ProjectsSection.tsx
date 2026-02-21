@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Rocket, Home, Cloud, TrendingUp, FileText } from "lucide-react";
+import { ExternalLink, Github, Rocket, Home, Cloud, TrendingUp, FileText, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -59,6 +59,19 @@ const projects = [
     tags: ["Python", "NLP", "TF-IDF", "Scikit-learn", "Streamlit"],
     demo: "https://text-classifier-ai.streamlit.app/",
     github: "https://github.com/bushra-siraj/News-Classifier-AI",
+  },
+  {
+    title: "Customer Intelligence Engine",
+    icon: Brain,
+    description: [
+      "Processed and cleaned a massive dataset of 1.06M+ transactions, handling over 243k missing values to build a robust, scalable backend for customer intelligence.",
+      "Implemented K-Means Clustering and PCA to reduce high-dimensional behavior into actionable segments, maintaining 96.01% variance while identifying key revenue drivers like \"VIPs\" and \"Loyalists\".",
+      "Deployed Gaussian Mixture Models to isolate the top 1% of anomalies, successfully flagging 60 high-risk accounts characterized by irregular wholesale or fraudulent spending patterns.",
+      "Developed a Collaborative Filtering system using Cosine Similarity to generate personalized product suggestions with match scores up to 98%, served via an interactive Streamlit dashboard.",
+    ],
+    tags: ["Python", "Machine Learning", "Streamlit", "Data Analysis", "Unsupervised Learning", "Scikit-learn"],
+    demo: "https://customer-intelligence-engine.streamlit.app/",
+    github: "https://github.com/bushra-siraj/Customer-Intelligence-Engine",
   },
 ];
 const ProjectsSection = () => (
