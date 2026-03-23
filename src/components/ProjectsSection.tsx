@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Rocket, Home, Cloud, TrendingUp, FileText, Brain } from "lucide-react";
+import { ExternalLink, Github, Rocket, Home, Cloud, TrendingUp, FileText, Brain, Flower2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -72,6 +72,20 @@ const projects = [
     tags: ["Python", "Machine Learning", "Streamlit", "Data Analysis", "Unsupervised Learning", "Scikit-learn"],
     demo: "https://customer-intelligence-engine.streamlit.app/",
     github: "https://github.com/bushra-siraj/Customer-Intelligence-Engine",
+  },
+  {
+    title: "BloomForYou",
+    icon: Flower2,
+    description: [
+      "Developed a creative gift-sharing platform allowing users to design custom digital bouquets with 6 flower types, scenes, and animations.",
+      "Engineered a seamless sender-to-receiver experience via shareable links, requiring no app installation for recipients.",
+      "Implemented cinematic animated reveals featuring character-driven bouquet delivery using Framer Motion.",
+      "Built a real-time global bloom counter to track worldwide interactions using a live database backend.",
+      "Integrated a full end-to-end flow with a focus on high-performance animations and responsive design.",
+    ],
+    tags: ["React", "TypeScript", "Supabase", "Framer Motion"],
+    demo: "https://bloomforyou.me/", 
+    github: "https://github.com/bushra-siraj/bloom-blossom-delight", 
   },
 ];
 const ProjectsSection = () => (
