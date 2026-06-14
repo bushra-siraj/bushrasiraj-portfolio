@@ -2,7 +2,7 @@ import { Award } from "lucide-react";
 
 const certifications = [
   { title: "Certified Data Science Professional", issuer: "Oracle" },
-  { title: "Data Science & AI Course", issuer: "SMIT", note: "In Progress" },
+  { title: "Data Science & AI Course", issuer: "SMIT"},
   { title: "Computer Vision and Image Processing", issuer: "OpenCV" },
   { title: "Python Fundamentals", issuer: "Cisco Networking Academy" },
   { title: "Certificate of Participation — Hackathon", issuer: "SMIT" },
